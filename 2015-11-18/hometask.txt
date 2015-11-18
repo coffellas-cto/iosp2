@@ -1,0 +1,10 @@
+Использовать следующие поля из ответа в качестве строк для отображения в ячейках:
+
+Section title = "date"
+Row#0 = "hourly"-"weatherDesc"
+Other rows
+"maxtempC"
+"mintempC"
+"sunrise"
+"sunset"
+"hourly":"windspeedKmph"
