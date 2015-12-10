@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9060"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GDViewController">
+            <connections>
+                <outlet property="customViewBottom" destination="5EG-nR-Erd" id="wSe-cm-XEg"/>
+                <outlet property="customViewUpperRight" destination="sYJ-VQ-cdh" id="qDZ-FU-ISG"/>
+                <outlet property="grayViewAlignYConstraint" destination="gcz-Zn-ezE" id="wUp-SM-Tfh"/>
+                <outlet property="grayViewHeightContrainy" destination="R0m-TI-hAx" id="clU-CV-5De"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjD-MN-PrM" userLabel="blueView">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="600"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.22352941179999999" green="0.70588235290000001" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8t2-wM-DEV">
+                    <rect key="frame" x="204" y="250" width="150" height="100"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="R0m-TI-hAx"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYJ-VQ-cdh" customClass="MyCustomView">
+                    <rect key="frame" x="400" y="0.0" width="200" height="200"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="CDT-xO-pF5"/>
+                        <constraint firstAttribute="height" constant="200" id="kEl-fi-zP9"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="yellowViewColor">
+                            <color key="value" red="0.37242614138562069" green="1" blue="0.79805848228248466" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5EG-nR-Erd" customClass="MyCustomView">
+                    <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="RFu-4b-n9K"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5EG-nR-Erd" secondAttribute="bottom" id="B5E-gU-83e"/>
+                <constraint firstAttribute="trailing" secondItem="sYJ-VQ-cdh" secondAttribute="trailing" id="CBf-z7-OYu"/>
+                <constraint firstItem="jjD-MN-PrM" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1:3" id="Cmc-ui-tUf"/>
+                <constraint firstItem="8t2-wM-DEV" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="1:4" id="Onh-U8-x83"/>
+                <constraint firstItem="8t2-wM-DEV" firstAttribute="leading" secondItem="jjD-MN-PrM" secondAttribute="trailing" constant="4" id="XvG-vP-H36"/>
+                <constraint firstItem="jjD-MN-PrM" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="bUz-2p-tx8"/>
+                <constraint firstAttribute="trailing" secondItem="5EG-nR-Erd" secondAttribute="trailing" id="eGm-wG-ses"/>
+                <constraint firstItem="jjD-MN-PrM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eRW-E7-Vgz"/>
+                <constraint firstItem="8t2-wM-DEV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gcz-Zn-ezE"/>
+                <constraint firstItem="sYJ-VQ-cdh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hhp-Dg-e98"/>
+                <constraint firstItem="5EG-nR-Erd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mTJ-GS-jIr"/>
+                <constraint firstItem="jjD-MN-PrM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tr2-rc-7Fx"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
